@@ -14,8 +14,8 @@ int potencia (int base, int expoente){
 int main(int argc, char** argv) {
 
 	char r = 's';
-	while(r == 's'){
 	int base, expoente;
+	while(r == 's'){
 	
 	
 		std:: cout << "De um valor para base: ";
@@ -35,3 +35,4 @@ int main(int argc, char** argv) {
 		
 	return 0;
 }
+
