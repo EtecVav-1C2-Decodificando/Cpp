@@ -19,21 +19,22 @@ int main(int argc, char** argv) {
     
     while(r=='s'){
 
-    std::cout << "Digite um numero inteiro: ";
-    std::cin >> num;
-
-    // executa a função e guarda o resultado na variável 
-    int soma = ehImpar(num);
-
-    // Exibe a soma dos números ímpares
-    std::cout << "A soma dos numeros impares ate o numero escolhido e: " << soma;
-    
-    std::cout << "\nContinuar? s/n: ";
-    std::cin >> r;
+	    std::cout << "Digite um numero inteiro: ";
+	    std::cin >> num;
+	
+	    // executa a função e guarda o resultado na variável 
+	    int soma = ehImpar(num);
+	
+	    // Exibe a soma dos números ímpares
+	    std::cout << "A soma dos numeros impares ate o numero escolhido e: " << soma;
+	    
+	    std::cout << "\nContinuar? s/n: ";
+	    std::cin >> r;
     
 	}
 
     return 0;
 }
+
 
 
