@@ -1,19 +1,19 @@
 #include <iostream>
 
-// Função retorna a soma dos números ímpares até o número
+// FunÃ§Ã£o retorna a soma dos nÃºmeros Ã­mpares atÃ© o nÃºmero
 int ehImpar(int num) {
-    int soma = 0;  // Variável para armazenar a soma dos ímpares
+    int soma = 0;  // VariÃ¡vel para armazenar a soma dos Ã­mpares
     
     for (int i = 1; i <= num; i++) {
-        if (i % 2 != 0) {  // Verifica se 'i (numero atual do loop)' é ímpar
-            soma = soma+i;  // Adiciona 'i' à soma
+        if (i % 2 != 0) {  // Verifica se 'i (numero atual do loop)' Ã© Ã­mpar
+            soma = soma+i;  // Adiciona 'i' Ã  soma
         }
     }
     
-    return soma;  // Retorna a soma dos números ímpares
+    return soma;  // Retorna a soma dos nÃºmeros Ã­mpares
 }
 
-int main() {
+int main(int argc, char** argv) {
 	char r='s';
     int num;
     
@@ -22,10 +22,10 @@ int main() {
     std::cout << "Digite um numero inteiro: ";
     std::cin >> num;
 
-    // executa a função e guarda o resultado na variável 
+    // executa a funÃ§Ã£o e guarda o resultado na variÃ¡vel 
     int soma = ehImpar(num);
 
-    // Exibe a soma dos números ímpares
+    // Exibe a soma dos nÃºmeros Ã­mpares
     std::cout << "A soma dos numeros impares ate o numero escolhido e: " << soma;
     
     std::cout << "\nContinuar? s/n: ";
@@ -35,4 +35,5 @@ int main() {
 
     return 0;
 }
+
 
