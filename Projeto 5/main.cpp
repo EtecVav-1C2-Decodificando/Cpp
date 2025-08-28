@@ -29,12 +29,13 @@ int main(int argc, char *argv[])
     std:: getline (std:: cin, palavra);
     
     if(e_palindromo(palavra)){
-        std:: cout << "Esta palavra'" << palavra << " ' e um palindromo";
+        std:: cout << "Esta palavra e um palindromo";
     } else {
-           std:: cout << "Esta palavra '" << palavra << " 'nao e um palindromo";
+           std:: cout << "Esta palavra nao e um palindromo";
     } 
     
     return 0;
     
 }
+
 
