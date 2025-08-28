@@ -2,16 +2,16 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-float pesoIdealMasculino(float altura) {
+float pesoMasculino(float altura) {
     return (72.7 * altura) - 58;
 }
 
-float pesoIdealFeminino(float altura) {
+float pesoFeminino(float altura) {
     return (62.1 * altura) - 44.7;
 }
 
 int main(int argc, char** argv) {
-    float altura, pesoideal;
+    float altura, pesoIdeal;
     char sexo, r = 's';
     
     while (r == 's' || r == 'S') {
@@ -21,12 +21,12 @@ int main(int argc, char** argv) {
         std::cin >> altura;
         
         if (sexo == 'M' || sexo == 'm') {
-            pesoideal = pesoIdealMasculino(altura);
-            std::cout << "Seu peso ideal e de: " << pesoideal << " kg" << std::endl;
+            pesoIdeal = pesoMasculino(altura);
+            std::cout << "Seu peso ideal e de: " << pesoIdeal << " kg" << std::endl;
         } 
         else if (sexo == 'F' || sexo == 'f') {
-            pesoideal = pesoIdealFeminino(altura);
-            std::cout << "Seu peso ideal e de: " << pesoideal << " kg" << std::endl;
+            pesoIdeal = pesoFeminino(altura);
+            std::cout << "Seu peso ideal e de: " << pesoIdeal << " kg" << std::endl;
         } 
         
         
@@ -36,3 +36,4 @@ int main(int argc, char** argv) {
     
     return 0;
 }
+
