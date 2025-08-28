@@ -1,32 +1,30 @@
 #include <iostream>
+#include <cmath> // para usar M_PI
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char** argv) {
-	float raio, soma, area;
-	int i;
-	char r;
+float areaCirculo(float raio) {
+    return M_PI * raio * raio;
+}
 
-	r='s';
-	
-	while(r=='s'){
-	soma=0;
-	i=1;
-		while(i<=5){
-	
-			std::cout<<"Qual o raio do circulo?";
-			std::cin>>raio;
-	
-			area=3.14*raio*raio;
-			soma=soma+area;
-		
-		i++;
-		}
-	
-		std::cout<<"A soma e: "<<soma<<std::endl;
-		std::cout<<"Continuar?(s/n)";
-		std::cin>>r;
-	}
-	
-	return 0;
+int main(int argc, char** argv) {
+    float raio, somaArea = 0.0f;
+     char r = 's';
+    
+    while (r == 's' || r == 'S') {
+    somaArea=0.0f;
+        
+    for (int i = 1; i <= 5; i++) {
+        std::cout << "Digite o raio do circulo " << i << ": ";
+        std::cin >> raio;
+        somaArea += areaCirculo(raio);
+    }
+    
+    std::cout << "\nA soma das areas dos 5 circulos e: " << somaArea << std::endl;
+    
+    std::cout << "\nDeseja continuar? (s/n): ";
+        std::cin >> r;
+    }
+
+    return 0;
 }
