@@ -2,11 +2,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+int potencia (int base, int expoente){
+	 int resultado =1;
+	 for (int i = 1; i <= expoente; i++) {
+            resultado *= base;
+    }
+    return resultado;
+}
+
+
 int main(int argc, char** argv) {
 
 	char r = 's';
 	while(r == 's'){
-	int base, expoente, potencia=1 ;
+	int base, expoente;
 	
 	
 		std:: cout << "De um valor para base: ";
@@ -15,11 +24,9 @@ int main(int argc, char** argv) {
 		std:: cout << "De um valor para o expoente: ";
 		std:: cin >> expoente;
 		
-	 for (int i = 1; i <= expoente; i++) {
-            potencia *= base; // Multiplica a base pelo valor da potência a cada iteração
-    }
+		int resultado = potencia(base, expoente);
     
-		std:: cout << "A potencia e: " << potencia;
+		std:: cout << "A potencia e: " << resultado;
 		std:: cout << "\nDeseja continuar (S/N)?";
 		std:: cin >> r; 
 	}
