@@ -94,15 +94,12 @@ int main(int argc, char** argv) {
     int ns;
     bool acertou = true;
     int tentativas=0;
-    int qtdLetras=0;
-    char letrasDigitadas[26];
     char resposta[5] = {"sim"};
     srand (time(NULL));
     
      
     while (strcmp(resposta, "sim") == 0){	
-    
-		qtdLetras=0;    
+  
     	ns = rand() % 38;
     	int tamanho = strlen(palavra[ns]);
 		strcpy(palavra_secreta, palavra[ns]);
@@ -174,3 +171,4 @@ int main(int argc, char** argv) {
     return 0;
 
 }
+
