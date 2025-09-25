@@ -82,7 +82,9 @@ void esconderpalavra(char palavra_secreta[],char palavra_oculta[], int tamanho){
 		    }
 	        
     }
-    
+
+	palavra_oculta[tamanho] = '\0';
+	
 }
 
 int main(int argc, char** argv) {
@@ -171,4 +173,5 @@ int main(int argc, char** argv) {
     return 0;
 
 }
+
 
